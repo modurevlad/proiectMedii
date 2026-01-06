@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Acasă";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bun venit la Service Auto</h1>
+    <p class="lead">Sistem de gestionare pentru service auto</p>
+    <hr />
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Clienți</h5>
+                    <p class="card-text">Gestionează clienții</p>
+                    <a asp-page="/Clients/Index" class="btn btn-primary">Vezi Clienți</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vehicule</h5>
+                    <p class="card-text">Gestionează vehiculele</p>
+                    <a asp-page="/Cars/Index" class="btn btn-primary">Vezi Vehicule</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Servicii</h5>
+                    <p class="card-text">Gestionează serviciile</p>
+                    <a asp-page="/Services/Index" class="btn btn-primary">Vezi Servicii</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Programări</h5>
+                    <p class="card-text">Gestionează programările</p>
+                    <a asp-page="/Appointments/Index" class="btn btn-primary">Vezi Programări</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

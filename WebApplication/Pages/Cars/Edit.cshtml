@@ -1,0 +1,69 @@
+@page
+@model WebApplication.Pages.Cars.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Car</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Car.Id" />
+            <div class="form-group">
+<span class="text-danger">*</span>
+                <label asp-for="Car.Brand" class="control-label"></label>
+                <input asp-for="Car.Brand" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Car.Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+<span class="text-danger">*</span>
+                <label asp-for="Car.Model" class="control-label"></label>
+                <input asp-for="Car.Model" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Car.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+<span class="text-danger">*</span>
+                <label asp-for="Car.Year" class="control-label"></label>
+                <input asp-for="Car.Year" class="form-control" type="number" min="1900" max="2100" aria-required="true"/>
+                <span asp-validation-for="Car.Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+<span class="text-danger">*</span>
+                <label asp-for="Car.PlateNumber" class="control-label"></label>
+                <input asp-for="Car.PlateNumber" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Car.PlateNumber" class="text-danger"></span>
+            </div>
+            
+            @if (Model.IsAdmin)
+            {
+                <div class="form-group">
+                    <label asp-for="Car.ClientId" class="control-label"></label>
+                    <select asp-for="Car.ClientId" class="form-control" asp-items="ViewBag.ClientId"></select>
+                    <span asp-validation-for="Car.ClientId" class="text-danger"></span>
+                </div>
+            }
+            else
+            {
+                <input type="hidden" asp-for="Car.ClientId" />
+            }
+            
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
