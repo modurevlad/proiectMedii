@@ -1,0 +1,207 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication
+build_property.RootNamespace = WebApplication
+build_property.ProjectDir = /Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Appointments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Appointments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Appointments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Appointments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Appointments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/AppointmentServices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRTZXJ2aWNlcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/AppointmentServices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRTZXJ2aWNlcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/AppointmentServices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRTZXJ2aWNlcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/AppointmentServices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRTZXJ2aWNlcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/AppointmentServices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnRTZXJ2aWNlcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Cars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Cars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Cars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Cars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2Fycy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Clients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Mechanics/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVjaGFuaWNzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Mechanics/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVjaGFuaWNzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Mechanics/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVjaGFuaWNzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Mechanics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVjaGFuaWNzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Mechanics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVjaGFuaWNzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Services/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Services/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Services/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Services/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Services/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VydmljZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/modurevlad/faculta/Medii/proiectMedii/WebApplication/WebApplication/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1q614v5sau

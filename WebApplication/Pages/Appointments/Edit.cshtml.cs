@@ -13,7 +13,7 @@ using WebApplication.Models;
 
 namespace WebApplication.Pages.Appointments
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class EditModel : PageModel
     {
         private readonly WebApplication.Data.ApplicationDbContext _context;

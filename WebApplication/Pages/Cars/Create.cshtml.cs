@@ -45,7 +45,7 @@ namespace WebApplication.Pages.Cars
                     var client = await _context.Clients.FirstOrDefaultAsync(c => c.UserId == user.Id);
                     if (client != null)
                     {
-                        Car = new Car { ClientId = client.Id };
+                        Car.ClientId = client.Id;
                     }
                     else
                     {
@@ -63,7 +63,7 @@ namespace WebApplication.Pages.Cars
         }
 
         [BindProperty]
-        public Car Car { get; set; } = default!;
+        public Car Car { get; set; } = new Car();
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()

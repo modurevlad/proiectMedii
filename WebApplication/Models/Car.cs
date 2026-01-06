@@ -18,7 +18,7 @@ public class Car
     public int Year { get; set; }
 
     [Required]
-    [Display(Name="Plate Number")]
+    [Display(Name="Plate Number")] 
     public string PlateNumber { get; set; }
 
     // FK
