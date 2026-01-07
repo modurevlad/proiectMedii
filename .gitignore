@@ -1,1 +1,13 @@
+# Rider / IntelliJ
+.idea/
 
+# Build output
+**/bin/
+**/obj/
+
+# SQLite temp files
+*.db-shm
+*.db-wal
+
+# macOS
+.DS_Store
