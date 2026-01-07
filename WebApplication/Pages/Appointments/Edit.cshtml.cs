@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WebApplication.Data;
 using WebApplication.Models;
 
 namespace WebApplication.Pages.Appointments
@@ -16,10 +12,10 @@ namespace WebApplication.Pages.Appointments
     [Authorize(Roles = "Admin")]
     public class EditModel : PageModel
     {
-        private readonly WebApplication.Data.ApplicationDbContext _context;
+        private readonly Data.ApplicationDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
 
-        public EditModel(WebApplication.Data.ApplicationDbContext context, UserManager<IdentityUser> userManager)
+        public EditModel(Data.ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
             _userManager = userManager;
