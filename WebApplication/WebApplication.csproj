@@ -70,6 +70,11 @@
       <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ValidationScriptsPartial.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ViewImports.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="MobileApp\global.json" />
+      <_ContentIncludedByDefault Remove="MobileApp\MobileApp\obj\MobileApp.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="MobileApp\MobileApp\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="MobileApp\MobileApp\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="MobileApp\MobileApp\Properties\launchSettings.json" />
     </ItemGroup>
 
 </Project>
