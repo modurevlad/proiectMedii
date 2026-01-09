@@ -1,4 +1,6 @@
-﻿namespace MobileAPP;
+using MobileAPP.Services;
+
+namespace MobileAPP;
 
 public partial class App : Application
 {
@@ -7,5 +9,8 @@ public partial class App : Application
         InitializeComponent();
 
         MainPage = new AppShell();
+        
+        // Set initial route based on authentication
+        // This will be handled in AppShell's navigation event
     }
 }

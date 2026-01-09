@@ -13,12 +13,19 @@ public class APIServiceCatalogItem
         _httpClient = httpClient;
     }
 
-    public async Task<IEnumerable<ServiceCatalogItem>> GetServiceCatalogItems()
+    public async Task<IEnumerable<ServiceCatalogItem>?> GetServiceCatalogItems()
     {
-       return await _httpClient.GetFromJsonAsync<IEnumerable<ServiceCatalogItem>>("api/ServiceCatalogItems");
+        try
+        {
+            return await _httpClient.GetFromJsonAsync<IEnumerable<ServiceCatalogItem>>("api/ServiceCatalogItems");
+        }
+        catch
+        {
+            return null;
+        }
     }
     
-    public async Task<ServiceCatalogItem> GetServiceCatalogItem(int id)
+    public async Task<ServiceCatalogItem?> GetServiceCatalogItem(int id)
     {
         try
         {
@@ -28,8 +35,9 @@ public class APIServiceCatalogItem
         {
             return null;
         }
-        
+        catch
+        {
+            return null;
+        }
     }
-    
-    
 }

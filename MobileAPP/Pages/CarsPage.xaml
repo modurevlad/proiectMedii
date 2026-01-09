@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MobileAPP.ViewModels"
+             xmlns:models="clr-namespace:MobileAPP.Models"
+             x:Class="MobileAPP.Pages.CarsPage"
+             x:DataType="viewmodel:CarsViewModel"
+             Title="Vehicule">
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid Grid.Row="0" ColumnDefinitions="*,Auto" ColumnSpacing="10" Margin="10">
+            <Button
+                Grid.Column="0"
+                Text="Înapoi"
+                Clicked="OnBackClicked"
+                HorizontalOptions="Start"
+                BackgroundColor="Gray"
+                TextColor="White" />
+            <Button
+                Grid.Column="1"
+                Text="Refresh"
+                Command="{Binding LoadCarsCommand}"
+                HorizontalOptions="End"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White" />
+        </Grid>
+
+        <RefreshView
+            Grid.Row="1"
+            IsRefreshing="{Binding IsLoading}"
+            Command="{Binding LoadCarsCommand}">
+            <ScrollView>
+                <VerticalStackLayout Padding="10" Spacing="10">
+                    <ActivityIndicator
+                        IsRunning="{Binding IsLoading}"
+                        IsVisible="{Binding IsLoading}"
+                        HeightRequest="50"
+                        HorizontalOptions="Center" />
+
+                    <Label
+                        Text="{Binding ErrorMessage}"
+                        TextColor="Red"
+                        IsVisible="{Binding HasErrorMessage}"
+                        Margin="10" />
+
+                    <Label
+                        Text="No cars found"
+                        IsVisible="{Binding IsEmpty}"
+                        HorizontalOptions="Center"
+                        Margin="20"
+                        FontSize="16"
+                        TextColor="Gray" />
+
+                    <CollectionView ItemsSource="{Binding Cars}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:Car">
+                                <Border
+                                    Stroke="{StaticResource Gray300}"
+                                    BackgroundColor="White"
+                                    StrokeThickness="1"
+                                    Padding="15"
+                                    Margin="0,0,0,10">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="8"/>
+                                    </Border.StrokeShape>
+                                    <Border.Shadow>
+                                        <Shadow Brush="Black" Offset="0,1" Radius="2" Opacity="0.1"/>
+                                    </Border.Shadow>
+                                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto">
+                                        <Label
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            FontSize="18"
+                                            FontAttributes="Bold"
+                                            Text="{Binding Brand}" />
+                                        <Label
+                                            Grid.Row="1"
+                                            Grid.Column="0"
+                                            FontSize="14"
+                                            TextColor="Gray"
+                                            Margin="0,5,0,0"
+                                            Text="{Binding Model}" />
+                                        <Label
+                                            Grid.Row="2"
+                                            Grid.Column="0"
+                                            FontSize="14"
+                                            TextColor="Gray"
+                                            Margin="0,5,0,0">
+                                            <Label.Text>
+                                                <Binding Path="Year" StringFormat="Year: {0}" />
+                                            </Label.Text>
+                                        </Label>
+                                        <Label
+                                            Grid.Row="3"
+                                            Grid.Column="0"
+                                            Text="{Binding PlateNumber}"
+                                            FontSize="14"
+                                            TextColor="Gray"
+                                            Margin="0,5,0,0" />
+                                        <Button
+                                            Grid.Row="0"
+                                            Grid.RowSpan="4"
+                                            Grid.Column="1"
+                                            Text="Delete"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CarsViewModel}}, Path=DeleteCarCommand}"
+                                            CommandParameter="{Binding .}"
+                                            BackgroundColor="Red"
+                                            TextColor="White"
+                                            Padding="15,5"
+                                            Margin="10,0,0,0" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </ScrollView>
+        </RefreshView>
+    </Grid>
+</ContentPage>
