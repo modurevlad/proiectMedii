@@ -8,6 +8,14 @@ namespace MobileAPP;
 
 public static class MauiProgram
 {
+    // API Configuration - Easy to change base URL here
+    // If localhost doesn't work, try:
+    // - "https://127.0.0.1:7298" (for iOS Simulator if localhost fails)
+    // - "http://localhost:5050" (if using HTTP instead of HTTPS)
+    // - "https://YOUR_MAC_IP:7298" (for physical iOS device, replace YOUR_MAC_IP with your Mac's IP)
+    private const string API_BASE_URL = "https://localhost:7298";
+    private const int API_TIMEOUT_SECONDS = 30;
+    
     public static MauiApp CreateMauiApp()
     {
         var builder = MauiApp.CreateBuilder();
@@ -46,9 +54,11 @@ public static class MauiProgram
             
             var httpClient = new HttpClient(authHandler)
             {
-                BaseAddress = new Uri("https://localhost:7298"),
-                Timeout = TimeSpan.FromSeconds(30)
+                BaseAddress = new Uri(API_BASE_URL),
+                Timeout = TimeSpan.FromSeconds(API_TIMEOUT_SECONDS)
             };
+            
+            System.Diagnostics.Debug.WriteLine($"HttpClient configured with BaseAddress: {API_BASE_URL}");
             return httpClient;
         });
 
