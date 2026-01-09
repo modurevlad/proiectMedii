@@ -4,12 +4,43 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MobileAPP"
+    xmlns:pages="clr-namespace:MobileAPP.Pages"
     Shell.FlyoutBehavior="Disabled"
-    Title="MobileAPP">
+    Title="Service Auto">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Clients"
+        ContentTemplate="{DataTemplate pages:ClientsPage}"
+        Route="ClientsPage" />
+
+    <ShellContent
+        Title="Cars"
+        ContentTemplate="{DataTemplate pages:CarsPage}"
+        Route="CarsPage" />
+
+    <ShellContent
+        Title="Services"
+        ContentTemplate="{DataTemplate pages:ServicesPage}"
+        Route="ServicesPage" />
+
+    <ShellContent
+        Title="Appointments"
+        ContentTemplate="{DataTemplate pages:AppointmentsPage}"
+        Route="AppointmentsPage" />
+
+    <ShellContent
+        Title="Mechanics"
+        ContentTemplate="{DataTemplate pages:MechanicsPage}"
+        Route="MechanicsPage" />
 
 </Shell>

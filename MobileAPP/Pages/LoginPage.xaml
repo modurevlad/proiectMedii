@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MobileAPP.ViewModels"
+             x:Class="MobileAPP.Pages.LoginPage"
+             x:DataType="viewmodel:LoginViewModel"
+             Title="Login">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,60,30,30"
+            Spacing="20"
+            VerticalOptions="Center">
+            
+            <Label
+                Text="{Binding TitleText}"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,0,0,30" />
+
+            <Entry
+                Placeholder="Email"
+                Text="{Binding Email}"
+                Keyboard="Email"
+                IsEnabled="{Binding IsNotLoading}" />
+
+            <Entry
+                Placeholder="Password"
+                Text="{Binding Password}"
+                IsPassword="True"
+                IsEnabled="{Binding IsNotLoading}" />
+
+            <Entry
+                Placeholder="Confirm Password"
+                Text="{Binding ConfirmPassword}"
+                IsPassword="True"
+                IsVisible="{Binding ShowConfirmPassword}"
+                IsEnabled="{Binding IsNotLoading}" />
+
+            <Label
+                Text="{Binding ErrorMessage}"
+                TextColor="Red"
+                IsVisible="{Binding HasErrorMessage}"
+                Margin="0,10" />
+
+            <ActivityIndicator
+                IsRunning="{Binding IsLoading}"
+                IsVisible="{Binding IsLoading}"
+                Margin="0,10" />
+
+            <Button
+                Text="Login"
+                Command="{Binding LoginCommand}"
+                IsVisible="{Binding ShowLoginButton}"
+                IsEnabled="{Binding IsNotLoading}"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                Margin="0,10" />
+
+            <Button
+                Text="Register"
+                Command="{Binding RegisterCommand}"
+                IsVisible="{Binding ShowRegisterButton}"
+                IsEnabled="{Binding IsNotLoading}"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                Margin="0,10" />
+
+            <Button
+                Text="{Binding ToggleButtonText}"
+                Command="{Binding ToggleModeCommand}"
+                IsEnabled="{Binding IsNotLoading}"
+                BackgroundColor="Transparent"
+                TextColor="{StaticResource Primary}"
+                Margin="0,10" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
