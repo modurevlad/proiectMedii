@@ -73,7 +73,19 @@ public partial class LoginViewModel : ObservableObject
         }
         catch (Exception ex)
         {
-            ErrorMessage = $"Login failed: {ex.Message}";
+            // Check if it's a connection error
+            if (ex.Message.Contains("connect", StringComparison.OrdinalIgnoreCase) || 
+                ex.Message.Contains("refused", StringComparison.OrdinalIgnoreCase) ||
+                ex.Message.Contains("timeout", StringComparison.OrdinalIgnoreCase))
+            {
+                ErrorMessage = $"Cannot connect to server.\n\nPlease verify:\n1. The server is running\n2. The server is accessible\n3. Check your network connection\n\nError: {ex.Message}";
+            }
+            else
+            {
+                ErrorMessage = $"Login failed: {ex.Message}";
+            }
+            
+            System.Diagnostics.Debug.WriteLine($"Login Error: {ex}");
         }
         finally
         {
@@ -127,7 +139,19 @@ public partial class LoginViewModel : ObservableObject
         }
         catch (Exception ex)
         {
-            ErrorMessage = $"Registration failed: {ex.Message}";
+            // Check if it's a connection error
+            if (ex.Message.Contains("connect", StringComparison.OrdinalIgnoreCase) || 
+                ex.Message.Contains("refused", StringComparison.OrdinalIgnoreCase) ||
+                ex.Message.Contains("timeout", StringComparison.OrdinalIgnoreCase))
+            {
+                ErrorMessage = $"Cannot connect to server.\n\nPlease verify:\n1. The server is running\n2. The server is accessible\n3. Check your network connection\n\nError: {ex.Message}";
+            }
+            else
+            {
+                ErrorMessage = $"Registration failed: {ex.Message}";
+            }
+            
+            System.Diagnostics.Debug.WriteLine($"Registration Error: {ex}");
         }
         finally
         {

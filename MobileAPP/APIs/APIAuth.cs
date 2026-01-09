@@ -31,9 +31,21 @@ public class APIAuth
             
             return null;
         }
-        catch
+        catch (HttpRequestException ex)
         {
-            return null;
+            // Provide more specific error information
+            System.Diagnostics.Debug.WriteLine($"HTTP Error during registration: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"Inner Exception: {ex.InnerException?.Message}");
+            throw new Exception($"Cannot connect to server. Please ensure the server is running at {_httpClient.BaseAddress}. Error: {ex.Message}", ex);
+        }
+        catch (TaskCanceledException ex)
+        {
+            throw new Exception("Connection timeout. The server may not be running or is not accessible.", ex);
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Registration Error: {ex.GetType().Name}: {ex.Message}");
+            throw;
         }
     }
 
@@ -55,9 +67,21 @@ public class APIAuth
             
             return null;
         }
-        catch
+        catch (HttpRequestException ex)
         {
-            return null;
+            // Provide more specific error information
+            System.Diagnostics.Debug.WriteLine($"HTTP Error: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"Inner Exception: {ex.InnerException?.Message}");
+            throw new Exception($"Cannot connect to server. Please ensure the server is running at {_httpClient.BaseAddress}. Error: {ex.Message}", ex);
+        }
+        catch (TaskCanceledException ex)
+        {
+            throw new Exception("Connection timeout. The server may not be running or is not accessible.", ex);
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Login Error: {ex.GetType().Name}: {ex.Message}");
+            throw;
         }
     }
 
