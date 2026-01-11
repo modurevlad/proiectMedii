@@ -29,6 +29,11 @@
         Route="CarsPage" />
 
     <ShellContent
+        Title="Car Edit"
+        ContentTemplate="{DataTemplate pages:CarEditPage}"
+        Route="CarEditPage" />
+
+    <ShellContent
         Title="Services"
         ContentTemplate="{DataTemplate pages:ServicesPage}"
         Route="ServicesPage" />
