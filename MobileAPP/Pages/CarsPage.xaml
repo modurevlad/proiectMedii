@@ -8,7 +8,7 @@
              Title="Vehicule">
 
     <Grid RowDefinitions="Auto,*">
-        <Grid Grid.Row="0" ColumnDefinitions="*,Auto" ColumnSpacing="10" Margin="10">
+        <Grid Grid.Row="0" ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="10" Margin="10">
             <Button
                 Grid.Column="0"
                 Text="Înapoi"
@@ -17,7 +17,14 @@
                 BackgroundColor="Gray"
                 TextColor="White" />
             <Button
-                Grid.Column="1"
+                Grid.Column="2"
+                Text="Add"
+                Command="{Binding NavigateToNewCommand}"
+                HorizontalOptions="End"
+                BackgroundColor="Green"
+                TextColor="White" />
+            <Button
+                Grid.Column="3"
                 Text="Refresh"
                 Command="{Binding LoadCarsCommand}"
                 HorizontalOptions="End"
@@ -66,7 +73,7 @@
                                     <Border.Shadow>
                                         <Shadow Brush="Black" Offset="0,1" Radius="2" Opacity="0.1"/>
                                     </Border.Shadow>
-                                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto">
+                                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto,Auto">
                                         <Label
                                             Grid.Row="0"
                                             Grid.Column="0"
@@ -101,13 +108,24 @@
                                             Grid.Row="0"
                                             Grid.RowSpan="4"
                                             Grid.Column="1"
+                                            Text="Edit"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CarsViewModel}}, Path=NavigateToDetailCommand}"
+                                            CommandParameter="{Binding .}"
+                                            BackgroundColor="{StaticResource Primary}"
+                                            TextColor="White"
+                                            Padding="10,5"
+                                            Margin="10,0,5,0" />
+                                        <Button
+                                            Grid.Row="0"
+                                            Grid.RowSpan="4"
+                                            Grid.Column="2"
                                             Text="Delete"
                                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:CarsViewModel}}, Path=DeleteCarCommand}"
                                             CommandParameter="{Binding .}"
                                             BackgroundColor="Red"
                                             TextColor="White"
-                                            Padding="15,5"
-                                            Margin="10,0,0,0" />
+                                            Padding="10,5"
+                                            Margin="5,0,0,0" />
                                     </Grid>
                                 </Border>
                             </DataTemplate>

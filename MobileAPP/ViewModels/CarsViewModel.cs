@@ -112,23 +112,16 @@ public partial class CarsViewModel : ObservableObject
     {
         if (car == null) return;
         
-        // TODO: Navigate to detail page
-        if (Application.Current?.MainPage != null)
-        {
-            await Application.Current.MainPage.DisplayAlert("Car", 
-                $"Car: {car.Brand} {car.Model} ({car.Year})\nPlate: {car.PlateNumber}", 
-                "OK");
-        }
+        // Navigate to edit page with car ID
+        Console.WriteLine($"[CarsViewModel] Navigating to edit car ID={car.Id}");
+        await Shell.Current.GoToAsync($"///CarEditPage?id={car.Id}");
     }
 
     [RelayCommand]
     private async Task NavigateToNewAsync()
     {
-        // TODO: Navigate to new car page
-        if (Application.Current?.MainPage != null)
-        {
-            await Application.Current.MainPage.DisplayAlert("New Car", "New car page coming soon!", "OK");
-        }
+        // Navigate to create page
+        await Shell.Current.GoToAsync("///CarEditPage");
     }
 
     partial void OnCarsChanged(ObservableCollection<Car> value)
